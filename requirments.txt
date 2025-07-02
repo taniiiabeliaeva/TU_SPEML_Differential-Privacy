@@ -1,0 +1,8 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+tensorflow  # for CNN
+opendp  # if needed
+diffprivlib  # IBM DP library
