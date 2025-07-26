@@ -62,12 +62,16 @@ chmod +x run.sh
 Both MNIST/main.py and Adult/main.py support command-line overrides for configuration.
 If you do not provide arguments, defaults from config.json will be used.
 
-Available Parameters
-Argument	| Description |	Example
---config	|Path to config file (optional)	|--config MNIST/config.json
---epsilon	|Override epsilon value (float)	|--epsilon 1.0
---method	|input, internal, output (DP Method)	|--method input
---model	|MNIST: logreg/cnn (MNIST), Adult: logreg/dt	|--model cnn
+#### Available Parameters
+|Argument	| Description |	Example|
+|------------|----------|---------------------------------|
+| --config	|Path to config file (optional)	| --config MNIST/config.json|
+|------------|----------|---------------------------------|
+| --epsilon	|Override epsilon value (float)	| --epsilon 1.0 |
+|------------|----------|---------------------------------|
+| --method	|input, internal, output (DP Method)	| --method input |
+|------------|----------|---------------------------------|
+| --model	|MNIST: logreg/cnn (MNIST), Adult: logreg/dt	| --model cnn |
 
 #### Examples
 Run MNIST with custom epsilon and method:
