@@ -115,10 +115,24 @@ def run_experiment(config):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Differential Privacy Experiment: Adult Dataset")
-    parser.add_argument("--config", type=str, default="config_adult.json", help="Path to config file")
+    parser.add_argument("--config", type=str, default="Adult/config.json", help="Path to config file")
+    parser.add_argument("--epsilon", type=float, help="Epsilon value")
+    parser.add_argument("--method", type=str, help="Method (input/internal/output)")
+    parser.add_argument("--model", type=str, help="Model (logreg/dt)")
     args = parser.parse_args()
 
     with open(args.config) as f:
         config = json.load(f)
+
+    # Override if provided
+    if args.epsilon:
+        config['epsilons'] = [args.epsilon]
+    if args.method:
+        config['methods'] = [args.method]
+    if args.model:
+        config['models'] = [args.model]
+    else:
+        config['models'] = ["logreg", "dt"]
+
 
     run_experiment(config)
