@@ -35,10 +35,10 @@ TU_SPEML_Differential-Privacy/
 │   ├── results_mnist.csv
 │   └── results_adult.csv
 │
-├── approaches_experiments/         # Jupyter notebooks for step-by-step analysis
-│   ├── mnist.ipynb                 # MNIST dataset experiments (input/internal/output perturbation)
-│   ├── adult.ipynb                 # Adult dataset experiments (input/internal/output perturbation)
-│   └── mnist.npz                   # Local MNIST copy for notebooks
+├── approaches_experiments/       # Jupyter notebooks for step-by-step analysis
+│   ├── mnist.ipynb               # MNIST dataset experiments (input/internal/output perturbation)
+│   ├── adult.ipynb               # Adult dataset experiments (input/internal/output perturbation)
+│   └── mnist.npz                 # Local MNIST copy for notebooks
 │
 ├── run.sh                        # Shell script to execute experiments
 ├── requirements.txt              # Dependencies
@@ -47,7 +47,7 @@ TU_SPEML_Differential-Privacy/
 
 ## Getting Started
 
-1. Quick Run
+1. Run  
 You can execute all experiments (MNIST + Adult) with a single command:
 ```
 ./run.sh
@@ -57,7 +57,7 @@ You can execute all experiments (MNIST + Adult) with a single command:
 - Run Adult dataset experiments  
 - Save results in results/
 
-2. MacOS Users
+2. MacOS Users  
 If you are using MacOS, open requirements.txt and uncomment the lines starting with # for mac-specific packages.
 ```
 tensorflow-macos
