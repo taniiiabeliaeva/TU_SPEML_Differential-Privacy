@@ -58,7 +58,33 @@ chmod +x run.sh
 - Run Adult dataset experiments  
 - Save results in results/
 
-### 2. MacOS Users  
+### 2. Parameter Usage
+Both MNIST/main.py and Adult/main.py support command-line overrides for configuration.
+If you do not provide arguments, defaults from config.json will be used.
+
+Available Parameters
+Argument	| Description |	Example
+--config	|Path to config file (optional)	|--config MNIST/config.json
+--epsilon	|Override epsilon value (float)	|--epsilon 1.0
+--method	|input, internal, output (DP Method)	|--method input
+--model	|MNIST: logreg/cnn (MNIST), Adult: logreg/dt	|--model cnn
+
+#### Examples
+Run MNIST with custom epsilon and method:
+```
+python MNIST/main.py --epsilon 1.0 --method input
+```
+Run Adult with Decision Tree and internal perturbation:
+```
+python Adult/main.py --method internal --model dt --epsilon 5.0
+```
+Run using config.json but override epsilon:
+```
+python MNIST/main.py --config MNIST/config.json --epsilon 0.5
+```
+
+
+### 3. MacOS Users  
 If you are using MacOS, open requirements.txt and uncomment the lines starting with # for mac-specific packages.
 ```
 tensorflow-macos
