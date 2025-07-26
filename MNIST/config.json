@@ -1,0 +1,6 @@
+{
+    "dataset": "MNIST",
+    "methods": ["input", "internal", "output"],
+    "epsilons": [0.01, 0.1, 0.5, 1.0, 5.0, 10.0],
+    "models": ["logreg", "cnn"]
+}
