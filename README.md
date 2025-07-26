@@ -50,6 +50,7 @@ TU_SPEML_Differential-Privacy/
 ### 1. Run  
 You can execute all experiments (MNIST + Adult) with a single command:
 ```
+chmod +x run.sh
 ./run.sh
 ```
 - Install required dependencies  
