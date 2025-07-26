@@ -5,7 +5,7 @@ from tensorflow.keras import layers, models
 # Loading MNIST dataset
 def load_mnist():
     url = "https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz"
-    filename = "mnist.npz"
+    filename = "MNIST/mnist.npz"
     urllib.request.urlretrieve(url, filename)
 
     with np.load(filename) as data:
