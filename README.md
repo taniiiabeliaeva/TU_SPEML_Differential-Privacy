@@ -18,7 +18,7 @@ The experiments measure the impact of each method on:
 
 ## Project Structure
 ```
-TU_SPEML_Differential-Privacy/
+Exercise2_Group20/
 │
 ├── MNIST/                        # MNIST dataset experiments
 │   ├── main.py                   # MNIST DP experiment script
