@@ -17,6 +17,7 @@ The experiments measure the impact of each method on:
 * **Privacy-utility trade-off**
 
 ## Project Structure
+```
 TU_SPEML_Differential-Privacy/
 │
 ├── MNIST/                        # MNIST dataset experiments
@@ -42,7 +43,7 @@ TU_SPEML_Differential-Privacy/
 ├── run.sh                        # Shell script to execute experiments
 ├── requirements.txt              # Dependencies
 └── README.md                     # Project documentation
-
+```
 
 ## Getting Started
 
