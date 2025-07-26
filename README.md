@@ -66,11 +66,8 @@ If you do not provide arguments, defaults from config.json will be used.
 |Argument	| Description |	Example|
 |------------|----------|---------------------------------|
 | --config	|Path to config file (optional)	| --config MNIST/config.json|
-|------------|----------|---------------------------------|
 | --epsilon	|Override epsilon value (float)	| --epsilon 1.0 |
-|------------|----------|---------------------------------|
 | --method	|input, internal, output (DP Method)	| --method input |
-|------------|----------|---------------------------------|
 | --model	|MNIST: logreg/cnn (MNIST), Adult: logreg/dt	| --model cnn |
 
 #### Examples
