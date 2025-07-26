@@ -47,7 +47,7 @@ TU_SPEML_Differential-Privacy/
 
 ## Getting Started
 
-1. Run  
+### 1. Run  
 You can execute all experiments (MNIST + Adult) with a single command:
 ```
 ./run.sh
@@ -57,7 +57,7 @@ You can execute all experiments (MNIST + Adult) with a single command:
 - Run Adult dataset experiments  
 - Save results in results/
 
-2. MacOS Users  
+### 2. MacOS Users  
 If you are using MacOS, open requirements.txt and uncomment the lines starting with # for mac-specific packages.
 ```
 tensorflow-macos
